@@ -33,7 +33,7 @@ Released   : 20130902
 	<div id="header">
 		<div id="logo">
 
-			<h1><img src="icone.png" alt="" class="icone" /></h1> <!-- icone de gsb -->
+			<h1><img src="Images/icone.png" alt="" class="icone" /></h1> <!-- icone de gsb -->
 
 		</div>
 		<div id="menu">
