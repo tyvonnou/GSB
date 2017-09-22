@@ -116,11 +116,18 @@ Released   : 20130902
         echo"<td>".$row['nbJustificatifs'].'</td>';
         echo"<td>".$row['montantValide']." €".'</td>';
         echo"<td>".$row['dateModif'].'</td>';
-        if ($row['idEtat'] == 0) {
-                  echo"<td> En Cours </td>";
-                } elseif ($row['idEtat'] == 1) {
-                    echo"<td> Valide </td>";
-                }
+        if ($row['idEtat'] == "CL") {
+                  echo"<td> Saisie Cloturée </td>";
+                } elseif ($row['idEtat'] == "CR") {
+                    echo"<td> Saisie en cours </td>";
+                } elseif ($row['idEtat'] == "RB") {
+                    echo"<td> Remboursée </td>";
+                } elseif ($row['idEtat'] == "VA") {
+                    echo"<td> Validé le </td>";
+				}
+			
+	
+		echo"<td>".$row['dateModif'].'</td>';
         echo"</tr>";
         }
         $mysqli->close();
