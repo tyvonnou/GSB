@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Ven 22 Septembre 2017 à 09:09
+-- Généré le :  Ven 29 Septembre 2017 à 09:14
 -- Version du serveur :  5.6.15-log
 -- Version de PHP :  5.5.12
 
@@ -25,6 +25,7 @@ SET time_zone = "+00:00";
 --
 -- Structure de la table `etat`
 --
+CREATE DATABASE `si6`;
 
 CREATE TABLE IF NOT EXISTS `etat` (
   `id` char(2) NOT NULL,
@@ -62,7 +63,8 @@ CREATE TABLE IF NOT EXISTS `fichefrais` (
 --
 
 INSERT INTO `fichefrais` (`idVisiteur`, `mois`, `annee`, `nbJustificatifs`, `montantValide`, `dateModif`, `idEtat`) VALUES
-('1', '12', '2015', 6, '466.00', '2017-03-30', 'VA');
+('1', '12', '2015', 6, '466.00', '2017-03-30', 'VA'),
+('1', '1', '2017', 5, '1109.92', '2017-09-22', '0');
 
 -- --------------------------------------------------------
 
@@ -107,7 +109,11 @@ INSERT INTO `lignefraisforfait` (`idVisiteur`, `mois`, `idFraisForfait`, `quanti
 ('1', 'dec', 'KM', 2),
 ('1', 'dec', 'ETP', 1),
 ('1', 'dec', 'NUI', 3),
-('1', 'dec', 'REP', 4);
+('1', 'dec', 'REP', 4),
+('1', '1', 'NUI', 5),
+('1', '1', 'REP', 5),
+('1', '1', 'ETP', 5),
+('1', '1', 'KM', 16);
 
 -- --------------------------------------------------------
 
